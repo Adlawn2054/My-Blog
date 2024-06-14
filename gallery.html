@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+    <div class="back-free">
+        <div class="change-background" onclick="background1()"><img src="1.jpg"alt=""></div>
+        <div class="change-background" onclick="background2()"><img src="profile.jpg" alt=""></div>
+        <div class="change-background" onclick="background3()"><img src="2.jpg" alt=""></div>
+    </div>
+</body>
+<script>
+    function background1(){
+        document.querySelector('body').style.background = "url('1.jpg')center center / cover";
+    }
+    function background2(){
+        document.querySelector('body').style.background = "url('profile.jpg')center center / cover";
+    }
+    function background3(){
+        document.querySelector('body').style.background = "url('2.jpg')center center / cover";
+    }
+</script>
+</html>

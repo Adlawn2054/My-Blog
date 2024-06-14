@@ -1,0 +1,130 @@
+:root {
+    --primary-gradient: linear-gradient(45deg, #d2001a, #7462ff);
+    --nav-bg: #22438c;
+    --nav-hover-shadow: 0 0 10px rgb(34, 30, 30), 0 0 15px rgb(5, 94, 5), 0 0 20px rgb(0, 0, 0);
+    --dropdown-bg: var(--primary-gradient);
+    --menu-padding: 20px 25px;
+    --menu-font-size: 15px;
+    --menu-color: #fff;
+    --button-width: 91px;
+    --button-height: 91px;
+    --button-bg: wheat;
+    --button-radius: 23px;
+    --container-width: 50rem;
+    --container-height: 6rem;
+    --container-bg: white;
+    --container-radius: 23px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--primary-gradient);
+    background: url('2.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    margin-top: -20px;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: var(--menu-padding);
+    color: var(--menu-color);
+    text-decoration: none;
+    text-align: center;
+    font-size: var(--menu-font-size);
+    transition: transform 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background: var(--nav-bg);
+    position: absolute;
+    z-index: 999;
+    display: none;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li a:hover {
+    text-shadow: var(--nav-hover-shadow);
+    transform: scale(1.2);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+    background: var(--dropdown-bg);
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-free {
+    width: var(--container-width);
+    height: var(--container-height);
+    background: var(--container-bg);
+    border-radius: var(--container-radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.back-free:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.change-background {
+    width: var(--button-width);
+    height: var(--button-height);
+    background: var(--button-bg);
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: var(--button-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+    border-radius: inherit;
+}
+
+.change-background img:hover {
+    transform: scale(1.2);
+}

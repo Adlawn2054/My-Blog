@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background: linear-gradient(45deg,#d2001a,#7462ff);
+}
+ul{
+    list-style: none;
+    background: transparent;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    display:block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration:none;
+    text-align:center;
+    font-size: 15px;
+    transition: transform .5s ease-in-out;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    width:100%;
+    background: #22438c;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    transition: 0.5s ease-in-out;
+}
+ul li a:hover{
+    text-shadow: 0 0 10px rgb(34, 30, 30),
+                0 0 15px rgb(5, 94, 5),
+                0 0 20px rgb(0, 0, 0);
+    transform: scale(1.2);
+    font-weight: 600;
+    text-decoration: underline;
+}
+ul li:hover ul.dropdown{
+    display: block;
+    background: linear-gradient(45deg,#d2001a,#7462ff);
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+.home img {
+    transition: transform 0.5s ease-in-out;
+}
+
+.home img:hover {
+    transform: scale(1.2);
+}
+
+.home img {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 50px;
+    right: 130px;
+    top: 18px;
+    box-shadow: 0 0 25px #0ef,
+        0 0 20px rgb(15, 160, 170),
+        0 0 40px rgb(97, 118, 190);
+}
+
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 90vh;
+    align-items: center;
+    padding: 70px 10% 0;
+    display: inline-block;
+}
+
+.content {
+    display: inline-block;
+}
+.content span{
+    color: #0ef;
+    font-weight:600;
+}
+
+.text {
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-right: 5px;
+    width: 100%;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s infinite,
+        cursor 0.5s infinite alternate;
+    
+}
+
+.text-content {
+    display: inline-block;
+    opacity: 0;
+}
+
+/* Animation */
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Typing Effects */
+@keyframes typing {
+    0% {
+        width: 0;
+        /* Start with width 0 */
+    }
+
+    50% {
+        width: 100%;
+        /* Type out halfway */
+    }
+
+    100% {
+        width: 0;
+        /* Reset to width 0 */
+    }
+}
+
+.content {
+    top: 15%;
+    max-width: 600px;
+    margin-top: 50px;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+.content h1 {
+    font-weight: 700;
+    font-size: 50px;
+}

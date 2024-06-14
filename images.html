@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="image.css">
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Dropdown</a>
+            <ul class="dropdown">
+                <li><a href="images.html">Gallery</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">PYTHON</a></li>
+            </ul>    
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Sign Out</a></li>
+    </ul>
+
+    <div class="back-free">
+        <div class="change-background" onclick="background1()"><img src="1.jpg"alt=""></div>
+        <div class="change-background" onclick="background2()"><img src="370234975_1070137927449239_8828629173854478185_n.jpg" alt=""></div>
+        <div class="change-background" onclick="background3()"><img src="2.jpg" alt=""></div>
+        <div class="change-background" onclick="background4()"><img src="pretty.jpg" alt=""></div>
+        <div class="change-background" onclick="background5()"><img src="profile.jpg" alt=""></div>
+        <div class="change-background" onclick="background6()"><img src="image1.jpg" alt=""></div>
+        <div class="change-background" onclick="background7()"><img src="image8.jpg" alt=""></div>
+        <div class="change-background" onclick="background8()"><img src="gorgeous.jpg" alt=""></div>
+
+    </div>
+</body>
+<script>
+    function background1(){
+        document.querySelector('body').style.background = "url('1.jpg')center center / cover";
+    }
+    function background2(){
+        document.querySelector('body').style.background = "url('370234975_1070137927449239_8828629173854478185_n.jpg')center center / cover";
+    }
+    function background3(){
+        document.querySelector('body').style.background = "url('2.jpg')center center / cover";
+    }
+    function background4(){
+        document.querySelector('body').style.background = "url('pretty.jpg')center center / cover";
+    }
+    function background5(){
+        document.querySelector('body').style.background = "url('profile.jpg')center center / cover";
+    }
+    function background6(){
+        document.querySelector('body').style.background = "url('image1.jpg')center center / cover";
+    }
+    function background7(){
+        document.querySelector('body').style.background = "url('image8.jpg')center center / cover";
+    }
+    function background8(){
+        document.querySelector('body').style.background = "url('gorgeous.jpg')center center / cover";
+    }
+
+</script>
+
+</body>
+</html>
